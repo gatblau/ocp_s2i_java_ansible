@@ -1,0 +1,15 @@
+Prometeo:
+Apache v2 - https://www.apache.org/licenses/LICENSE-2.0
+
+Ansible:
+GPL v3 - https://github.com/ansible/ansible/blob/devel/COPYING
+
+Git:
+GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+
+CentOS:
+GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+
+Other packages:
+For information about licenses of installed packages run:
+rpm -qa --qf '%{LICENSE}\n' | sort | uniq
