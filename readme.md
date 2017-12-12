@@ -27,6 +27,9 @@ oc logs -f bc/java_ansible
 # create a binary build from the 'java' image stream 
 oc new-build  -i java_ansible --binary=true --to=my_app --strategy=source
 
+# triggers the build of the 'java_ansible' image if the 'java' image changes
+oc set triggers bc/java_ansible --from-image=java:latest 
+
 # start the build using the application jar file
 oc start-build my_app --from-file=./target/my_app-0.0.1-SNAPSHOT.jar --follow
 ```
