@@ -28,5 +28,5 @@ oc logs -f bc/java_ansible
 oc new-build  -i java_ansible --binary=true --to=my_app --strategy=source
 
 # start the build using the application jar file
-oc start-build my_app --from-file=./target/java_app-0.0.1-SNAPSHOT.jar --follow
+oc start-build my_app --from-file=./target/my_app-0.0.1-SNAPSHOT.jar --follow
 ```
