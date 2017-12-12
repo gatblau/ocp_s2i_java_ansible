@@ -30,4 +30,4 @@ LABEL io.k8s.display-name="Ansible" \
       maintainer="gatblau.org"
 
 # switch to app user
-USER app
+USER 1001
