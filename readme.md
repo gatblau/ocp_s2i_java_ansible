@@ -1,6 +1,6 @@
 # OpenShift s2i image for Ansible
 
-An OpenShift s2i image with Java and Ansible.
+An OpenShift s2i image with Java, Ansible and Git.
 
 ## How to use the image
 
